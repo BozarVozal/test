@@ -67,7 +67,9 @@ class CourseViewSet(viewsets.ModelViewSet):
         permission_classes=(permissions.IsAuthenticated,)
     )
     def pay(self, request, pk):
+
         """Покупка доступа к курсу (подписка на курс)."""
+
         course = get_object_or_404(Course, pk=pk)
         user = request.user
         balance = get_object_or_404(Balance, user=user)

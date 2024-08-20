@@ -63,6 +63,7 @@ class Lesson(models.Model):
 class Group(models.Model):
     """Модель группы."""
 
+    objects = None
     course = models.ForeignKey(
         Course,
         related_name='groups',

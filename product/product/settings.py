@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'api.apps.ApiConfig',
-    'courses.apps.CoursesConfig',
     'users.apps.UsersConfig',
+    'courses.apps.CoursesConfig',
     'drf_spectacular',
 ]
 

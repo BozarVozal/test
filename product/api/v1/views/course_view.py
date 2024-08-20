@@ -7,7 +7,7 @@ from product.api.v1.permissions import IsStudentOrIsAdmin, ReadOnlyOrIsAdmin
 from product.api.v1.serializers.course_serializer import (CourseSerializer, CreateCourseSerializer,
                                                           CreateGroupSerializer, CreateLessonSerializer,
                                                           GroupSerializer, LessonSerializer)
-from product.api.v1.serializers.user_serializer import SubscriptionSerializer
+from api.v1.serializers.user_serializer import SubscriptionSerializer
 from product.courses.models import Course, Group, Lesson
 from product.users.models import Subscription, Balance
 
